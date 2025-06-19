@@ -1,0 +1,22 @@
+# This file is for reference if you want to use Python tools or deploy to platforms that require requirements.txt.
+# For Node.js/Express, dependencies are managed in package.json, but here are the main backend dependencies:
+
+bcryptjs
+cloudinary
+compression
+cookie-parser
+cors
+crypto
+dotenv
+express
+express-async-handler
+express-rate-limit
+express-validator
+helmet
+jsonwebtoken
+mongoose
+morgan
+multer
+multer-storage-cloudinary
+nodemailer
+redis 
