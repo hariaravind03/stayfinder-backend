@@ -15,7 +15,7 @@ const app = express();
 app.use(helmet());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-
+app.set('trust proxy', 1);
 // Rate limiting
 const limiter = rateLimit({
   windowMs: 15 * 60 * 1000, // 15 minutes
@@ -44,6 +44,7 @@ const corsOptions = {
   exposedHeaders: ['Set-Cookie'],
   maxAge: 86400 // 24 hours
 };
+
 app.use(cors(corsOptions));
 // Middleware
 app.use(cors(corsOptions));
