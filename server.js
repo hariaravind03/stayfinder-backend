@@ -35,9 +35,7 @@ const authLimiter = rateLimit({
 // CORS configuration
 // CORS configuration
 const corsOptions = {
-  origin: process.env.NODE_ENV === 'production'
-    ? [process.env.FRONTEND_URL, 'https://stayfinder-frontend-prwq.vercel.app/']
-    : 'http://localhost:3000',
+  origin: 'https://stayfinder-frontend-prwq.vercel.app/',
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization', 'Cookie'],
