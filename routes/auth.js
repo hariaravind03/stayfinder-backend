@@ -167,7 +167,6 @@ router.post('/verify-login-otp', async (req, res) => {
       secure: true,
       sameSite: 'none',
       path: '/',
-      domain: process.env.COOKIE_DOMAIN || undefined,
       maxAge: 7 * 24 * 60 * 60 * 1000 // 7 days
     });
 
